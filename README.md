@@ -1,6 +1,6 @@
 # Django Deployment on AWS Lightsail 
 
-## (Apache on Linux)
+## on Linux with Apache as proxy server and Daphne as async web server
 
 This is intended to be a detailed refference on how to deploy a Python/Django web app that uses:
 
