@@ -4,7 +4,9 @@
 
 I've built a Django app that interacts with different external APIs and uses: 
 > **Celery** to offload very long tasks
+> 
 > **Redis** as a backend for Celery
+> 
 > **Django Channels** to send task updates to the UI.
 
 At the moment I'm having hard times in deploying this app as vhost on AWS Lightsail with Apache on Linux.
