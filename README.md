@@ -2,6 +2,8 @@
 
 ### on AWS Lightsail packaged by Bitnami with Apache on Linux
 
+#### This is intended to be a detailed refference on how to deploy a Python/Django web app that uses Celery, Redis, Django-Channels.
+
 I've built a Django app that interacts with different external APIs and uses: 
 > **Celery** to offload very long tasks
 > **Redis** as a backend for Celery
