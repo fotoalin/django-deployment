@@ -17,8 +17,11 @@ Also there are no issues when using Apache mod_wsgi to interact with django.
 The issue came up because I had to switch on using Daphne (and it has to be used) in order to interact with django channels over web sockets.
 
 > **Domain name**: staging.bakery.webdev.co.uk, managed by AWS (accessible within bakery network only)
+> 
 > **Dependencies**: Celery, Redis, Django-Channels (installed and configured)
-> HTTPS: generated and set self signed SSL certificates
+> 
+> **HTTPS**: generated and set self signed SSL certificates
+> 
 > **Supervisor**: installed and used to manage Celery and Daphne services. Both Celery and Daphne seem to run properly with no errors.
 
 The Django web app mainly uses HTTPS to operate, but some functionalities uses Redis & Celery for creating and executing tasks and Django-Channels for sending task progress updates to the UI.
